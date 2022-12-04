@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+            color: red;
+        }
+        #h1{
+            text-shadow: 5px 5px 20px white,-5px -5px 20px white;
+            text-align: center;
+        }
+        #img1{
+            width: 350px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            animation: img1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            background-color: white;
+            border-radius:5em;
+            border-style:dotted;
+            border-color: black;
+            padding: 20px;
+            box-shadow: 10px 10px 100px white,-10px -10px 100px white;
+        }
+        #h1:hover{
+            animation: h1ani;
+            animation: h1ani;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            cursor: pointer;
+        }
+        @keyframes h1ani{
+            100%{
+                transform: scale3d(1.2,1.3,1.4);
+            }
+        }
+        @keyframes img1{
+            33%{
+                transform: scale(.01);
+                background-color: black;
+            }
+            100%{
+                transform: scale(1);
+                background-color:   blue;
+            }
+           
+        }
+        #h2{
+                text-align: center;
+            }
+            #p1{
+                text-align: center;
+                animation: pani;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes pani{
+                100%{
+                    transform:scale(1.3,2.6);
+                }
+            }
+    </style>
+</head>
+<body>
+    <a href="https://en.wikipedia.org/wiki/The_Terminator" target="_blank">
+    <h1 title="CLICK HERE TO KNOW MORE ABOUT TERMINATOR" id="h1">
+     TERMINATOR 
+    </h1>
+    </a>
+    <img src="img.jpg" alt="a really cool image of terminator" id="img1">
+    <br>
+    <p id="p1">HAPPY BIRTHDAY</p>
+    <br>
+    <h2 id="h2" class="h">
+        HAPPY BIRTHDAY AYUSH!
+        &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-: TERMINATOR ( T-800 )
+    </h2>
+</body>
+</html>
